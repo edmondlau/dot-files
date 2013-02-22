@@ -1,0 +1,13 @@
+startup_message off
+
+# Autodetach session on hangup instead of terminating
+# autodetach on
+
+escape ^zz                              # set escape to ctrl-z
+bindkey -k k1 command                   # set F1 to be the real command key
+bindkey -k k2 command                   # set F2 to be another command key
+
+vbell off                               # disable visual bell
+defscrollback 10000                     # large scroll back
+
+caption always "%{wk}%?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{wk}%?%+Lw %=%{mk}@%H %{yk}%D %{ck}%M%{wk} %{ck}%d %{gk}%c"
